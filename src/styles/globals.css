@@ -1,0 +1,54 @@
+#chat-ui {
+  width: 500px;
+  border: 1px solid #d1d1d1;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+}
+#chat-ui .chat-icon {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #d1d1d1;
+  margin-right: 5px;
+  border-radius: 50px;
+}
+#chat-ui .chat-header {
+  border-bottom: 1px solid #d1d1d1;
+  align-items: center;
+}
+#chat-ui .chat-body {
+  padding: 15px;
+  overflow: auto;
+  max-height: 500px;
+  background: #f1f1f1;
+  min-height: 300px;
+}
+#chat-ui .chat-models .v-input__details {
+  display: none;
+}
+#chat-ui .chat-prompt-area {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 10px 30px;
+  width: 100%;
+  position: relative;
+}
+#chat-ui .chat-prompt-area .prompt-text {
+  width: 100%;
+  max-height: 200px;
+  min-height: 50px;
+  resize: none;
+  height: auto;
+  overflow: auto;
+}
+#chat-ui .chat-prompt-area .prompt-text:focus {
+  border: none;
+  outline: none;
+}
+#chat-ui .chat-prompt-area .prompt-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+/*# sourceMappingURL=globals.css.map */
