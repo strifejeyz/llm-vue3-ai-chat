@@ -9,16 +9,19 @@ export default createStore({
             type: 'success',
         },
         config: {
-            icon: "https://gravatar.com/avatar/8eaa69e8312fa88456f0bbad796adc20?s=200&d=robohash&r=x",
-            title: "Assistant",
             model: "mistral-7b-instruct-v0.3",
             baseurl: "https://lmstudio.codestrife.site",
             prompt: "",
-            init_msg: "What can I help with?",
             instruct: "You are an AI assistant. Keep responses short and informative.",
             models: [],
+            chats:  [],
+
+            // UI settings
+            width: 500,
+            init_msg: "What can I help with?",
+            icon: "https://gravatar.com/avatar/8eaa69e8312fa88456f0bbad796adc20?s=200&d=robohash&r=x",
+            title: "Assistant",
             visible: true,
-            chats: [],
         }
     },
     actions: {
