@@ -81,7 +81,6 @@ export default {
             this.response.id = Date.now();
             this.response.timestamp = new Date().toISOString();
             this.response.message = "Thinking...";
-
             Axios.post("/v1/chat/completions",data).then(res => {
                 // Populate the response word per word
                 let words = res.data.choices[0].message.content.split(" ");
@@ -106,6 +105,13 @@ export default {
                 console.error("Error:", error)
             });
         },
+        ScrollToBottom() {
+            const chatBody = document.querySelector('.chat-body');
+            const observer = new MutationObserver(() => {
+                chatBody.scrollTop = chatBody.scrollHeight;
+            });
+            observer.observe(chatBody, { childList: true, subtree: true });
+        }
     },
     mounted() {
         Axios.defaults.baseURL = this.$store.state.config.baseurl;
@@ -119,6 +125,11 @@ export default {
         "config.prompt"() {
             this.AdjustHeight();
         },
+        "is_loading"(newVal) {
+            if (newVal) {
+                this.ScrollToBottom();
+            }
+        }
     },
 }
 </script>
