@@ -22,6 +22,7 @@ export default createStore({
             icon: "https://gravatar.com/avatar/8eaa69e8312fa88456f0bbad796adc20?s=200&d=robohash&r=x",
             title: "Assistant",
             visible: true,
+            theme: "dark", // light or dark
         }
     },
     actions: {
@@ -81,6 +82,6 @@ export default createStore({
 
     // Persist your state
     plugins: [createPersistedState({
-        paths: ['config.chats'],
+        paths: ['config'],
     })]
 });

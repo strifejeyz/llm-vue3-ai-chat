@@ -1,13 +1,13 @@
 <template>
-    <v-card elevation="0" id="chat-ui" :width="config.width">
-        <v-card-title class="chat-header d-flex">
+    <v-card :class="`${config.theme}-theme`" :theme="config.theme" elevation="0" id="chat-ui" :width="config.width">
+        <v-card-title class="chat-header border-b d-flex">
             <img class="chat-icon" :src="config.icon" alt="">
             {{config.title}}
             <v-spacer/>
             <Buttons/>
         </v-card-title>
         <v-card-text v-if="config.visible" class="chat-body">
-            <h1 v-if="!config.chats.length" class="text-center mt-5 mb-5">
+            <h1 v-if="!config.chats.length" class="init-message">
                 {{config.init_msg}}
             </h1>
             <Message v-for="chat in config.chats" :chat="chat"/>
