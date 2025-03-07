@@ -1,92 +1,14 @@
-# Barebones Template: Vuetify 3 + Vue 3 + Vite + Router + Vuex
+# lmstudio-vue3-chat-ui
 
-This project is a barebones starter template integrating:
+**A sleek and lightweight chat UI for LM Studio-powered local LLMs, built with Vue 3.**
 
-- **Vuetify 3** for UI components
-- **Vue 3** as the core framework
-- **Vite** for fast and modern build tooling
-- **Vue Router** for routing
-- **Vuex** for state management
+This project provides a responsive and modern chat interface designed for seamless interaction with local large language models (LLMs) running on LM Studio. Built with Vue 3 and the Composition API, it offers:
 
-## Features
+- 🔹 **Real-time chat experience** with a clean, minimal UI
+- 🔹 **Vue 3** for maintainability and performance
+- 🔹 **Vuetify 3** for a polished and responsive design
+- 🔹 **Persistent state** to retain conversation history
+- 🔹 **Lightweight and fast**, optimized for local AI inference
+- 🔹 **Easy customization** control everything in settings
 
-- Pre-configured Vuetify 3 setup
-- Ready-to-use routing with Vue Router
-- State management with Vuex
-- Vite-based development server and build process
-- Lightweight and extendable structure
-
----
-
-## Installation
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/strifejeyz/vuetify3-vite
-   cd vuetify3-vite
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
----
-
-## Usage
-
-### Development Server
-
-Start the development server with hot module replacement:
-
-```bash
-npm run dev
-```
-or 
-
-```bash
-vite
-```
-
-### Build for Production
-
-Build the project for production:
-
-```bash
-npm run build
-```
-or 
-
-```bash
-vite build
-```
-
----
-
-## Project Structure
-
-```
-├── public/
-├── src/
-│   ├── components/
-│   ├── mixins/
-│   ├── plugins/
-│   ├── router/
-│   ├── state/
-│   ├── styles/
-│   ├── views/
-│   ├── App.vue
-│   └── main.js
-├── .browserslistrc
-├── .editorconfig
-├── .gitignore
-├── index.html
-├── jsconfig.json
-├── package.json
-├── package-lock.json
-├── README.md
-├── settings.json
-└── vite.config.js
-```
+🚀 Currently, **this UI only supports LM Studio**, but future updates may expand compatibility.  
