@@ -16,4 +16,4 @@ const app = createApp(App);
 app.config.globalProperties.$axios = Axios;
 registerPlugins(app);
 app.use(Store);
-app.mount('#app');
+app.mount('#chat-app');

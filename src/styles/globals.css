@@ -6,10 +6,10 @@
 }
 #chat-ui .chat-icon {
   height: 30px;
-  width: 30px;
   border: 1px solid #d1d1d1;
   margin-right: 5px;
   border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.39);
 }
 #chat-ui .init-message {
   text-align: center;
