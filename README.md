@@ -10,5 +10,7 @@ This project provides a responsive and modern chat interface designed for seamle
 - 🔹 **Persistent state** to retain conversation history
 - 🔹 **Lightweight and fast**, optimized for local AI inference
 - 🔹 **Easy customization** control everything in settings
+ 
+
 
 🚀 Currently, **this UI only supports LM Studio**, but future updates may expand compatibility.  
